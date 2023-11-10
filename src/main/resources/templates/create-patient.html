@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register new patient</title>
+	</head>
+	<body>
+	<form action="#" th:action="@{/createpatient}" th:object="${patient}" method="post">
+			<label for="fullName">Full name</label>
+		    <input type="text" th:field="*{fullName}" id="fullName" placeholder="Full name">
+		    
+		    <label for="description">Description of health</label>
+		    <input type="text" th:field="*{description}" id="description" placeholder="Description of health">
+	    
+		    
+			<input type="submit" value="Register new Patient"> 
+		</form>
+	</body>
+</html>

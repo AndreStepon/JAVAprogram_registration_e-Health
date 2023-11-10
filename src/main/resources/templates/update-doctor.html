@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update doctor's information</title>
+</head>
+	<body>
+		<form action="#" th:action="@{/update/{id}(id=${doctor.id})}" th:object="${doctor}" method="post">
+		 	<label for="fullName">Full name</label>
+		 	<input type="text" th:field="*{fullName}" id="fullName" placeholder="Full name">
+		 	
+		 	<label for="roomNum">Room number</label>
+   			<input type="number" th:field="*{roomNum}" id="roomNum" placeholder="Room number">
+   	 	
+		 	<input type="submit" value="Update Doctor">  
+		</form>
+	</body>
+</html>
